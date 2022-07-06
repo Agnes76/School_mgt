@@ -1,0 +1,52 @@
+﻿@model School_Mgt.Models.Course
+
+@{
+    ViewBag.Title = "Edit";
+
+    <div class="card">
+        <div class="card-header">
+            <h3>Edit Course</h3>
+        </div>
+        <div class="card-body">
+            @using (Html.BeginForm())
+            {
+                @Html.AntiForgeryToken()
+                @Html.HiddenFor(m => m.CourseId)
+                <div class="form-group">
+                    @Html.LabelFor(m => m.CourseName)
+                    @Html.EditorFor(m => m.CourseName, new { htmlAttributes = new { @class = "form-control" } })
+                    @Html.ValidationMessageFor(m => m.CourseName)
+                </div>
+                <div class="form-group">
+                    @Html.LabelFor(m => m.CourseUnit)
+                    @Html.EditorFor(m => m.CourseUnit, new { htmlAttributes = new { @class = "form-control" } })
+                    @Html.ValidationMessageFor(m => m.CourseUnit)
+                </div>
+                <div class="form-group">
+                    @Html.LabelFor(m => m.Grade)
+                    @Html.EditorFor(m => m.Grade, new { htmlAttributes = new { @class = "form-control" } })
+                    @Html.ValidationMessageFor(m => m.Grade)
+                </div>
+                <div class="form-group">
+                    @Html.LabelFor(m => m.Score)
+                    @Html.EditorFor(m => m.Score, new { htmlAttributes = new { @class = "form-control" } })
+                    @Html.ValidationMessageFor(m => m.Score)
+                </div>
+                <div class="form-group">
+                    @Html.LabelFor(m => m.GradeUnit)
+                    @Html.EditorFor(m => m.GradeUnit, new { htmlAttributes = new { @class = "form-control" } })
+                    @Html.ValidationMessageFor(m => m.GradeUnit)
+                </div>
+                <div class="form-group">
+                    @Html.LabelFor(m => m.Cumulative)
+                    @Html.EditorFor(m => m.Cumulative, new { htmlAttributes = new { @class = "form-control" } })
+                    @Html.ValidationMessageFor(m => m.Cumulative)
+                </div>
+                <div class="form-group">
+                    <button type="submit" class="btn btn-sm btn-primary rounded-0">Update</button>
+                    @Html.ActionLink("Back to List", "Index", "Course", new { @class = "btn btn-sm btn-primary rounded-0" })
+                </div>
+            }
+        </div>
+    </div>
+}

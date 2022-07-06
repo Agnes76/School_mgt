@@ -1,0 +1,45 @@
+﻿@model IList<School_Mgt.Models.Department>
+@{
+    ViewData["Title"] = "Home Page";
+}
+
+<div class="text-center">
+    <h1 class="display-4">Welcome</h1>
+    <p>Learn about <a href="https://docs.microsoft.com/aspnet/core">building Web apps with ASP.NET Core</a>.</p>
+</div>
+<div style="margin-bottom: 10px;">
+    @Html.ActionLink("Create New", "Create", "Department", "", new { @class = "btn btn-sm btn-primary rounded-0" })
+</div>
+
+<h4 class="text-center text-uppercase">List Of Students</h4>
+
+<table class="table">
+    <thead class="thead-dark">
+        <tr>
+            <th scope="col">DepartmenttId</th>
+            <th scope="col">Department Name</th>
+            <th scope="col">Size</th>
+            <th scope="col">Action(s)</th>
+        </tr>
+    </thead>
+    <tbody>
+        @foreach (var dept in Model)
+        {
+            <tr>
+                <td>@dept.DepartmentId</td>
+                <td>@dept.DepartmentName</td>
+                <td>@dept.Size</td>
+                <td>
+                    <a href="@Url.Action("Details", "Home", new {id=dept.DepartmentId })" class="btn btn-sm btn-primary"><i class="fa fa-eye"></i></a>
+                    <a href="@Url.Action("Edit", "Home", new {id=dept.DepartmentId })" class="btn btn-sm btn-primary"><i class="fa fa-pencil-square"></i></a>
+                    <a href="@Url.Action("Delete", "Home", new {id=dept.DepartmentId })" class="btn btn-sm btn-primary"><i class="fa fa-trash-can"></i></a>
+                </td>
+            </tr>
+
+        }
+
+    </tbody>
+</table>
+
+
+

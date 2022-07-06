@@ -1,0 +1,78 @@
+﻿@model IList<School_Mgt.Models.Student>
+@{
+    ViewData["Title"] = "Home Page";
+    var serial = 1;
+}
+
+<div class="text-center">
+    <h1 class="display-4">Welcome</h1>
+    <p>Learn about <a href="https://docs.microsoft.com/aspnet/core">building Web apps with ASP.NET Core</a>.</p>
+</div>
+<div style="margin-bottom: 10px;">
+    @Html.ActionLink("Create New", "Create", "Home", "", new { @class = "btn btn-sm btn-primary rounded-0" })
+</div>
+<div class="card">
+    @if (@ViewBag.IsSuccessful == "Yes")
+    {
+        <span class="text-danger">Saved Successfully</span>
+    }
+</div>
+
+<h4 class="text-center text-uppercase">List Of Students</h4>
+
+<table class="table">
+    <thead class="thead-dark">
+        <tr>
+            <th scope="col">StudentId</th>
+            <th scope="col">FirstName</th>
+            <th scope="col">LastName</th>
+            <th scope="col">Date Of Birth</th>
+            <th scope="col">Department</th>
+            <th scope="col">Address</th>
+            <th scope="col">PhoneNumber</th>
+            <th scope="col">Action(s)</th>
+        </tr>
+    </thead>
+    <tbody>
+        @foreach (var student in Model)
+        {
+            <tr>
+                <td>@(serial++)</td>
+                <td>@student.FirstName</td>
+                <td>@student.LastName</td>
+                <td>@student.BirthDate</td>
+                <td>@student.Department.DepartmentName</td>
+                <td>@student.Address</td>
+                <td>@student.PhoneNumber</td>
+                <td>
+                    <a href="@Url.Action("Details", "Home", new {id=student.StudentId })" class="btn btn-sm btn-primary"><i class="fa fa-eye"></i></a>
+                    <a href="@Url.Action("Edit", "Home", new {id=student.StudentId })" class="btn btn-sm btn-primary"><i class="fa fa-pencil-square"></i></a>
+                    <a href="@Url.Action("Delete", "Home", new {id=student.StudentId })" class="btn btn-sm btn-primary"><i class="fa fa-trash-can"></i></a>
+                </td>
+            </tr>
+
+        }
+
+    </tbody>
+</table>
+
+@section Scripts{
+
+  <script type="text/javascript">
+
+    function openSuccessModal(strMessage) {
+        var myDiv = document.getElementById("MyModalSuccessAlertBody");
+        myDiv.innerHTML = strMessage;
+        $('#myModalSuccess').modal('show');
+    }
+
+    $(document).ready(function () {
+        var msg = "@TempData["SuccessMessage"]";
+        if (msg) {
+            openSuccessModal(msg);
+        }
+    });
+  </script>
+}
+
+

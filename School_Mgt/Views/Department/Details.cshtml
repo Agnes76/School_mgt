@@ -1,0 +1,32 @@
+﻿@model School_Mgt.Models.Department
+
+@{
+    ViewBag.Title = "Details";
+}
+
+<div class="card">
+    <div class="card-header">
+        <h4 class="text-center text-uppercase">Department Details</h4>
+    </div>
+    <div class="card-body">
+        <dl class="dl-horizontal">
+            <dt>
+                @Html.DisplayNameFor(model => model.DepartmentName)
+            </dt>
+            <dd>
+                @Html.DisplayFor(model => model.DepartmentName)
+            </dd>
+            <dt>
+                @Html.DisplayNameFor(model => model.Size)
+            </dt>
+            <dd>
+                @Html.DisplayFor(model => model.Size)
+            </dd>
+        </dl>
+        @Html.ActionLink("Edit", "Edit", "Home", new { id = @Model.DepartmentId }, new { @class = "btn btn-sm btn-info rounded-0" })
+        @Html.ActionLink("Back To List", "Index", "Department", new { @class = "btn btn-sm btn-primary rounded-0" })
+    </div>
+
+</div>
+
+

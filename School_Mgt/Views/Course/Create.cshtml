@@ -1,0 +1,46 @@
+﻿@{
+    ViewData["Title"] = "Create Course";
+}
+<form action="/Course/Add" method="post">
+    <div class="form-row">
+        <div class="col">
+            <label>Course Name</label>
+            <input type="text" name="CourseName" class="form-control" />
+        </div>
+
+        <div class="col">
+            <label>Course Unit</label>
+            <input type="text" name="CourseUnit" class="form-control" />
+        </div>
+    </div>
+
+    <div class="form-row">
+        <div class="col">
+            <label>Grade</label>
+            <input type="text" name="Grade" class="form-control" />
+        </div>
+
+        <div class="col">
+            <label>Score</label>
+            <input type="text" name="Score" class="form-control" />
+        </div>
+    </div>
+
+    <div class="form-row">
+        <div class="col">
+            <label>Grade Unit</label>
+            <input type="text" name="Grade Unit" class="form-control" />
+        </div>
+
+        <div class="col">
+            <label>Cumulative</label>
+            <input type="text" name="Cumulative" class="form-control" />
+        </div>
+    </div>
+
+    <div>
+        <button type="submit" class="btn btn-primary">Submit</button>
+    </div>
+
+
+</form>

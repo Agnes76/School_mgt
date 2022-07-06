@@ -1,0 +1,15 @@
+C:\Users\hp\source\repos\School_Mgt\School_Mgt.Data\obj\Debug\net5.0\School_Mgt.Data.csproj.AssemblyReference.cache
+C:\Users\hp\source\repos\School_Mgt\School_Mgt.Data\obj\Debug\net5.0\School_Mgt.Data.GeneratedMSBuildEditorConfig.editorconfig
+C:\Users\hp\source\repos\School_Mgt\School_Mgt.Data\obj\Debug\net5.0\School_Mgt.Data.AssemblyInfoInputs.cache
+C:\Users\hp\source\repos\School_Mgt\School_Mgt.Data\obj\Debug\net5.0\School_Mgt.Data.AssemblyInfo.cs
+C:\Users\hp\source\repos\School_Mgt\School_Mgt.Data\obj\Debug\net5.0\School_Mgt.Data.csproj.CoreCompileInputs.cache
+C:\Users\hp\source\repos\School_Mgt\School_Mgt.Data\bin\Debug\net5.0\School_Mgt.Data.deps.json
+C:\Users\hp\source\repos\School_Mgt\School_Mgt.Data\bin\Debug\net5.0\School_Mgt.Data.dll
+C:\Users\hp\source\repos\School_Mgt\School_Mgt.Data\bin\Debug\net5.0\ref\School_Mgt.Data.dll
+C:\Users\hp\source\repos\School_Mgt\School_Mgt.Data\bin\Debug\net5.0\School_Mgt.Data.pdb
+C:\Users\hp\source\repos\School_Mgt\School_Mgt.Data\bin\Debug\net5.0\School_Mgt.Models.dll
+C:\Users\hp\source\repos\School_Mgt\School_Mgt.Data\bin\Debug\net5.0\School_Mgt.Models.pdb
+C:\Users\hp\source\repos\School_Mgt\School_Mgt.Data\obj\Debug\net5.0\School_Mgt.Data.csproj.CopyComplete
+C:\Users\hp\source\repos\School_Mgt\School_Mgt.Data\obj\Debug\net5.0\School_Mgt.Data.dll
+C:\Users\hp\source\repos\School_Mgt\School_Mgt.Data\obj\Debug\net5.0\ref\School_Mgt.Data.dll
+C:\Users\hp\source\repos\School_Mgt\School_Mgt.Data\obj\Debug\net5.0\School_Mgt.Data.pdb

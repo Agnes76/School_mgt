@@ -1,0 +1,106 @@
+﻿@model School_Mgt.Models.ViewModel.CreateStudentViewModel
+@{
+    ViewData["Title"] = "Create Student";
+}
+<form action="/Home/Create" method="post">
+    <div class="form-row">
+        <div class="col">
+            <label asp-for="FirstName">First Name</label>
+            <input asp-for="FirstName" type="text" name="FirstName" class="form-control" />
+            <span asp-validation-for="FirstName" class="text-danger"></span>
+        </div>
+
+        <div class="col">
+            <label asp-for="LastName">Last Name</label>
+            <input asp-for="LastName" type="text" name="LastName" class="form-control" />
+            <span asp-validation-for="LastName" class="text-danger"></span>
+        </div>
+    </div>
+
+    <div class="form-row">
+        <div class="col">
+            <label asp-for="BirthDate">Date Of Birth</label>
+            <input asp-for="BirthDate" type="date" name="BirthDate" class="form-control" />
+            <span asp-validation-for="BirthDate" class="text-danger"></span>
+        </div>
+
+        <div class="col">
+            <label asp-for="DepartmentId">Department</label>
+            <select asp-for="DepartmentId" asp-items="@ViewBag.Department" class="custom-select">
+                <option value="">Please select department</option>
+            </select>
+            <span asp-validation-for="DepartmentId" class="text-danger"></span>
+        </div>
+    </div>
+
+    <div class="form-row">
+        <div class="col">
+            <label asp-for="Address">Address</label>
+            <input asp-for="Address" type="text" name="Address" class="form-control" />
+            <span asp-validation-for="Address" class="text-danger"></span>
+        </div>
+
+        <div class="col">
+            <label asp-for="PhoneNumber">Phone Number</label>
+            <input asp-for="PhoneNumber" type="text" name="PhoneNumber" class="form-control" />
+            <span asp-validation-for="PhoneNumber" class="text-danger"></span>
+        </div>
+    </div>
+
+    <div>
+        <button type="submit" class="btn btn-primary">Submit</button>
+    </div>
+
+
+</form>
+
+@*@model School_Mgt.Models.Student
+@{
+    ViewBag.Title = "Create";
+}
+<div class="card">
+    <div class="card-header">
+        <h5>New Student</h5>
+    </div>
+    <div class="card-body">
+        @using (Html.BeginForm())
+        {
+            @Html.AntiForgeryToken()
+            <div class="form-group">
+                @Html.LabelFor(m => m.FirstName)
+                @Html.TextBoxFor(m => m.FirstName, new { @class = "form-control" })
+                @Html.ValidationMessageFor(m => m.FirstName)
+            </div>
+            <div class="form-group">
+                @Html.LabelFor(m => m.LastName)
+                @Html.TextBoxFor(m => m.LastName, new { @class = "form-control" })
+                @Html.ValidationMessageFor(m => m.LastName)
+            </div>
+            <div class="form-group">
+                @Html.LabelFor(m => m.BirthDate)
+                @Html.TextBoxFor(m => m.BirthDate, new { @class = "form-control" })
+                @Html.ValidationMessageFor(m => m.BirthDate)
+            </div>
+            <div class="form-group">
+                @Html.LabelFor(m => m.PhoneNumber)
+                @Html.TextBoxFor(m => m.PhoneNumber, new { @class = "form-control" })
+                @Html.ValidationMessageFor(m => m.PhoneNumber)
+            </div>
+            <div class="form-group">
+                @Html.LabelFor(m => m.Address)
+                @Html.TextBoxFor(m => m.Address, new { @class = "form-control" })
+                @Html.ValidationMessageFor(m => m.Address)
+            </div>
+            <div class="form-group">
+                @Html.LabelFor(m => m.DepartmentId)
+                @Html.TextBoxFor(m => m.DepartmentId, new { @class = "form-control" })
+                @Html.ValidationMessageFor(m => m.DepartmentId)
+            </div>
+            <div class="form-group">
+                <button type="submit" class="btn btn-sm btn-primary rounded-0">Submit</button>
+            </div>
+        }
+    </div>
+</div>*@
+
+

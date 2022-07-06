@@ -1,0 +1,20 @@
+<Project Sdk="Microsoft.NET.Sdk.Web">
+
+  <PropertyGroup>
+    <TargetFramework>net5.0</TargetFramework>
+  </PropertyGroup>
+
+  <ItemGroup>
+    <PackageReference Include="Microsoft.AspNet.Mvc" Version="5.2.9" />
+    <PackageReference Include="MySql.Data" Version="8.0.29" />
+    <PackageReference Include="MySqlConnector" Version="2.1.10" />
+    <PackageReference Include="System.Data.SqlClient" Version="4.8.3" />
+  </ItemGroup>
+
+  <ItemGroup>
+    <ProjectReference Include="..\School_Mgt.Data\School_Mgt.Data.csproj" />
+    <ProjectReference Include="..\School_Mgt.Models\School_Mgt.Models.csproj" />
+    <ProjectReference Include="..\School_Mgt.Services\School_Mgt.Services.csproj" />
+  </ItemGroup>
+
+</Project>

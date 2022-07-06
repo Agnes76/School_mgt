@@ -1,0 +1,53 @@
+﻿@model IList<School_Mgt.Models.Course>
+@{
+    ViewData["Title"] = "Course Page";
+    var serial = 1;
+}
+
+<div class="text-center">
+    <h1 class="display-4">Welcome</h1>
+    <p>Learn about <a href="https://docs.microsoft.com/aspnet/core">building Web apps with ASP.NET Core</a>.</p>
+</div>
+<div style="margin-bottom: 10px;">
+    @Html.ActionLink("Create New", "Create", "Course", "", new { @class = "btn btn-sm btn-primary rounded-0" })
+</div>
+
+<h4 class="text-center text-uppercase">List Of Courses</h4>
+
+<table class="table">
+    <thead class="thead-dark">
+        <tr>
+            <th scope="col">CourseId</th>
+            <th scope="col">CourseName</th>
+            <th scope="col">CourseUnit</th>
+            <th scope="col">Grade</th>
+            <th scope="col">Score</th>
+            <th scope="col">GradeUnit</th>
+            <th scope="col">Cumulative</th>
+            <th scope="col">Action(s)</th>
+        </tr>
+    </thead>
+    <tbody>
+        @foreach (var course in Model)
+        {
+            <tr>
+                <td>@serial</td>
+                <td>@course.CourseName</td>
+                <td>@course.CourseUnit</td>
+                <td>@course.Grade</td>
+                <td>@course.Score</td>
+                <td>@course.GradeUnit</td>
+                <td>@course.Cumulative</td>
+                <td>
+                    <a href="@Url.Action("Details", "Course", new {id=course.CourseId })" class="btn btn-sm btn-primary"><i class="fa fa-eye"></i></a>
+                    <a href="@Url.Action("Edit", "Course", new {id=course.CourseId })" class="btn btn-sm btn-primary"><i class="fa fa-pencil-square"></i></a>
+                    <a href="@Url.Action("Delete", "Course", new {id=course.CourseId })" class="btn btn-sm btn-primary"><i class="fa fa-trash-can"></i></a>
+                </td>
+            </tr>
+            serial++;
+        }
+
+    </tbody>
+</table>
+
+

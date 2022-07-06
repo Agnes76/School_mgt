@@ -1,0 +1,26 @@
+{
+  "Version": 1,
+  "ProjectMap": {
+    "0d4f3610-23d5-42c3-b4c7-545fc952b82f": {
+      "ProjectGuid": "0d4f3610-23d5-42c3-b4c7-545fc952b82f",
+      "DisplayName": "School_Mgt.Models",
+      "ColorIndex": 0
+    },
+    "60a149ff-d970-45b0-bb55-43910f8b0276": {
+      "ProjectGuid": "60a149ff-d970-45b0-bb55-43910f8b0276",
+      "DisplayName": "School_Mgt.Data",
+      "ColorIndex": 1
+    },
+    "a2fe74e1-b743-11d0-ae1a-00a0c90fffc3": {
+      "ProjectGuid": "a2fe74e1-b743-11d0-ae1a-00a0c90fffc3",
+      "DisplayName": "Miscellaneous Files",
+      "ColorIndex": -1
+    },
+    "459c5204-3733-4fe9-9904-362cad64a7ab": {
+      "ProjectGuid": "459c5204-3733-4fe9-9904-362cad64a7ab",
+      "DisplayName": "School_Mgt",
+      "ColorIndex": 2
+    }
+  },
+  "NextColorIndex": 3
+}

@@ -1,0 +1,47 @@
+﻿@model IList<School_Mgt.Models.Teacher>
+@{
+    ViewData["Title"] = "Home Page";
+}
+
+<div class="text-center">
+    <h1 class="display-4">Welcome</h1>
+    <p>Learn about <a href="https://docs.microsoft.com/aspnet/core">building Web apps with ASP.NET Core</a>.</p>
+</div>
+<div style="margin-bottom: 10px;">
+    @Html.ActionLink("Create New", "Create", "Teacher", "", new { @class = "btn btn-sm btn-primary rounded-0" })
+</div>
+
+<h4 class="text-center text-uppercase">List Of Teachers</h4>
+
+<table class="table">
+    <thead class="thead-dark">
+        <tr>
+            <th scope="col">TeacherId</th>
+            <th scope="col">TeacherName</th>
+            <th scope="col">JobTitle</th>
+            <th scope="col">Report To</th>
+            <th scope="col">Action(s)</th>
+        </tr>
+    </thead>
+    <tbody>
+        @foreach (var teacher in Model)
+        {
+            <tr>
+                <td>@teacher.TeacherId</td>
+                <td>@teacher.TeacherName</td>
+                <td>@teacher.JobTitle</td>
+                <td>@teacher.ReportTo</td>
+                
+                <td>
+                    <a href="@Url.Action("Details", "Teacher", new {id=teacher.TeacherId })" class="btn btn-sm btn-primary"><i class="fa fa-eye"></i></a>
+                    <a href="@Url.Action("Edit", "Teacher", new {id=teacher.TeacherId })" class="btn btn-sm btn-primary"><i class="fa fa-pencil-square"></i></a>
+                    <a href="@Url.Action("Delete", "Teacher", new {id=teacher.TeacherId })" class="btn btn-sm btn-primary"><i class="fa fa-trash-can"></i></a>
+                </td>
+            </tr>
+
+        }
+
+    </tbody>
+</table>
+
+

@@ -1,0 +1,12 @@
+C:\Users\hp\source\repos\School_Mgt\School_Mgt.Services\bin\Debug\net5.0\School_Mgt.Services.deps.json
+C:\Users\hp\source\repos\School_Mgt\School_Mgt.Services\bin\Debug\net5.0\School_Mgt.Services.dll
+C:\Users\hp\source\repos\School_Mgt\School_Mgt.Services\bin\Debug\net5.0\ref\School_Mgt.Services.dll
+C:\Users\hp\source\repos\School_Mgt\School_Mgt.Services\bin\Debug\net5.0\School_Mgt.Services.pdb
+C:\Users\hp\source\repos\School_Mgt\School_Mgt.Services\obj\Debug\net5.0\School_Mgt.Services.csproj.AssemblyReference.cache
+C:\Users\hp\source\repos\School_Mgt\School_Mgt.Services\obj\Debug\net5.0\School_Mgt.Services.GeneratedMSBuildEditorConfig.editorconfig
+C:\Users\hp\source\repos\School_Mgt\School_Mgt.Services\obj\Debug\net5.0\School_Mgt.Services.AssemblyInfoInputs.cache
+C:\Users\hp\source\repos\School_Mgt\School_Mgt.Services\obj\Debug\net5.0\School_Mgt.Services.AssemblyInfo.cs
+C:\Users\hp\source\repos\School_Mgt\School_Mgt.Services\obj\Debug\net5.0\School_Mgt.Services.csproj.CoreCompileInputs.cache
+C:\Users\hp\source\repos\School_Mgt\School_Mgt.Services\obj\Debug\net5.0\School_Mgt.Services.dll
+C:\Users\hp\source\repos\School_Mgt\School_Mgt.Services\obj\Debug\net5.0\ref\School_Mgt.Services.dll
+C:\Users\hp\source\repos\School_Mgt\School_Mgt.Services\obj\Debug\net5.0\School_Mgt.Services.pdb

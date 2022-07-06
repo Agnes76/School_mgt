@@ -1,0 +1,23 @@
+{
+  "runtimeTarget": {
+    "name": ".NETCoreApp,Version=v5.0",
+    "signature": ""
+  },
+  "compilationOptions": {},
+  "targets": {
+    ".NETCoreApp,Version=v5.0": {
+      "School_Mgt.Services/1.0.0": {
+        "runtime": {
+          "School_Mgt.Services.dll": {}
+        }
+      }
+    }
+  },
+  "libraries": {
+    "School_Mgt.Services/1.0.0": {
+      "type": "project",
+      "serviceable": false,
+      "sha512": ""
+    }
+  }
+}

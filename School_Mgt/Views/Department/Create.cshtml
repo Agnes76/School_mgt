@@ -1,0 +1,28 @@
+﻿@model School_Mgt.Models.Models.ViewModel.CreateDepartmentViewModel
+@{
+    ViewData["Title"] = "Create Department";
+}
+<form action="/Department/Create" method="post">
+    <div class="form-row">
+        <div class="col">
+            <label asp-for="DepartmentName">Department Name</label>
+            <input asp-for="DepartmentName" type="text" name="DepartmentName" class="form-control" />
+            <span asp-validation-for="DepartmentName" class="text-danger"></span>
+        </div>
+
+        <div class="col">
+            <label asp-for="Size">Size</label>
+            <input asp-for="Size" type="number" name="Size" class="form-control"/>
+            <span asp-validation-for="Size" class="text-danger"></span>
+        </div>
+    </div>
+
+    <div>
+        <button type="submit" class="btn btn-primary">Submit</button>
+    </div>
+</form>
+
+
+
+
+
